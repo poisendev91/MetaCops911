@@ -54,7 +54,7 @@ const Hero = () => {
                             
                                     <img src={Collection} alt="hero" />
                                     <img src={Collection2} alt="hero" />
-                                    <img src={Collection3} alt="hero" />
+                                  
                                   
                                 </div>
                                 
