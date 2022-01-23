@@ -4,8 +4,8 @@ import "./Hero.css";
 import { Grid } from "@mui/material";
 import CheckCircleRoundedIcon from "@mui/icons-material/CheckCircleRounded";
 import Astro from "../../assets/astro.png";
-import Collection from "../../assets/collection.png";
-import Collection2 from "../../assets/collection2.png";
+import Collection from "../../assets/cop1.jpg";
+import Collection2 from "../../assets/cop2.jpg";
 import Collection3 from "../../assets/collection3.png";
 const Hero = () => {
     return (
@@ -52,9 +52,9 @@ const Hero = () => {
                             <div className="right-hero-div ">
                                 <div style={{ display: "flex", flexDirection: "row" }}>
                             
-                                    <img src={Collection3} alt="hero" />
                                     <img src={Collection} alt="hero" />
                                     <img src={Collection2} alt="hero" />
+                                    <img src={Collection3} alt="hero" />
                                   
                                 </div>
                                 
