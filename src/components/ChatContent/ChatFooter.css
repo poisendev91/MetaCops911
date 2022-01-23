@@ -1,0 +1,44 @@
+.chatFooter{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding:15px 30px;
+    display: flex;
+    background-color: #000;
+}
+input{
+    height: 50px !important;
+    width: 64%;
+    font-size: 16px;
+    padding: 2px 30px !important;
+    color: black !important;
+    border-radius: 5px;
+    margin-right: 20px !important;
+}
+input:focus{
+    outline: none !important
+}
+.btn__send{
+    height: 50px;
+}
+@media(max-width: 1024px){
+    .chatFooter{
+        padding: 2px 0;
+        width: 95%;
+    }
+}
+@media(max-width: 768px){
+    .chatFooter input{
+        padding: 18px;
+    }
+    .chatFooter{
+        width: 90% 
+    }
+    
+}
+@media(max-width: 425px){
+    .chatFooter{
+        padding: 2px 0;
+        width: 97%;
+    }
+}

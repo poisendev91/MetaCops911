@@ -1,0 +1,79 @@
+.faqs___section{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 10px 3px;
+    background-color: black;
+    font-family: 'Nunito Sans', sans-serif
+}
+
+li.single-quest-faqs span img{
+    height: 50px;
+}
+
+.faqs___section div{
+    width: 100%;
+}
+
+.faqs__quest__list{
+    list-style: none;
+    padding-left: 20px;
+}
+.faqs__quest__list li {
+    margin-bottom: 50px;
+}
+
+.faq___tablist{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 0;
+    list-style: none;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    padding-bottom: 28px;
+    flex-direction: row;
+    padding-left: 0;
+}
+.faq___tablist li a{
+    color: white;
+} 
+
+.faq___tablist li a.active{
+    text-decoration: underline;
+}
+
+.single-quest-faqs span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quest___faq___quest{
+    color: #fff;
+    width: 60vw;
+    font-size: 22px;
+    padding-left: 30px;
+}
+
+.answer___faq___quest{
+    width: 60vw;
+    padding-left: 30px;
+    color: #6e6e6e;
+}
+
+@media (max-width: 768px) {
+    .faq___tablist{
+        justify-content: space-evenly;
+        margin-bottom: 0;
+        padding-top: 30px;
+        padding-bottom: 28px;
+    }
+    
+    .answer___faq___quest, .quest___faq___quest{
+        width: 60vw;
+        padding: 0;
+    }
+    .single-quest-faqs span{
+        justify-content: space-around;
+    }
+}

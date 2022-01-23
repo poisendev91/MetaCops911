@@ -1,0 +1,233 @@
+/* header */
+
+.header-class {
+    background-color: black;
+}
+.header {
+    display: block;
+    max-width: 95%;
+    padding: 0;
+    margin: 0px auto;
+    height: 95px;
+}
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.grey-color {
+    color: #868e96;
+}
+
+.header li a.navbar__link {
+    font-size: 20px;
+    display: block;
+    padding: 0px 20px;
+    text-decoration: none;
+    color: white;
+}
+.select___navbar___main div a {
+    padding-top: 7px !important;
+    padding-bottom: 0px !important;
+}
+
+.select___navbar___main div{
+    background-color: black !important;
+}
+.header .logo {
+    display: block;
+    float: left;
+    font-size: 1.5em;
+    text-decoration: none;
+    margin-top: 10px;
+    line-height: normal;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    padding: 0 10px;
+    /* color: #55198b; */
+}
+
+/* menu */
+
+.menu {
+    font-family: "Montserrat", sans-serif;
+}
+
+.menu {
+    clear: both;
+    transition: max-height 0.2s ease-out;
+    display: flex;
+
+}
+
+/* menu icon */
+
+.menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    padding: 20px 20px;
+    position: relative;
+    user-select: none;
+}
+
+.menu-icon .navicon {
+    background: white;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background 0.2s ease-out;
+    width: 18px;
+}
+
+.menu-icon .navicon:before,
+.menu-icon .navicon:after {
+    background: white;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all 0.2s ease-out;
+    width: 100%;
+}
+
+.menu-icon .navicon:before {
+    top: 5px;
+}
+
+.menu-icon .navicon:after {
+    top: -5px;
+}
+
+/* menu btn */
+
+.menu-btn {
+    display: none;
+    color: white;
+}
+
+.menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+}
+
+.menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}
+
+.menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+
+.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+    .header li {
+        float: left;
+    }
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .menu {
+        max-height: none;
+    }
+    .menu-icon {
+        display: none;
+    }
+}
+@media (max-width: 960px) and (min-width: 768px) {
+    .header {
+        font-size: 12px;
+    }
+    .header li a.navbar__link{
+        padding: 7px;
+    }
+}
+@media (max-width: 768px) {
+    .header {
+        padding: 30px 0px;
+    }
+    .header-opened{
+        height: 160px;
+    }
+    .header li a.navbar__link{
+        padding: 0 15px;
+    }
+    .menu{
+        overflow-x: scroll;
+        overflow-y: visible;
+        height: 250%;
+        position: relative;
+        top:20%;
+        align-items: flex-start !important;
+    }
+    .menu::-webkit-scrollbar {
+        display: none;
+      }
+    .menu-not-opened{
+        display: none !important;
+    }
+    .search{
+        margin-top: 3px;
+            width: 40%;
+            margin-left: 30vw;
+    }
+}
+@media (max-width: 350px) {
+    .search{
+        width: 36%;
+    }
+    .hero_btn2, .hero_btn1{
+        padding: 8px 25px !important;
+    }
+}
+
+
+/* Search */
+.search {
+    display: flex;
+    margin-top: 3px;
+  }
+  
+  .searchTerm {
+    width: 150%;
+    border: 2px solid white;
+    padding: 5px !important;
+    height: 36px !important;
+    outline: none;
+    color: #efefef !important;
+    background: black !important;
+    border-left: none;
+    border-radius: 0;
+    border-top-right-radius: 11px;
+    border-bottom-right-radius: 11px;
+  }
+  
+  .searchTerm:focus {
+    color: white;
+  }
+  
+  .searchButton {
+    width: 80px;
+    height: 36px;
+    border: 2px solid white;
+    background: black;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    border-right: none;
+    border-top-left-radius: 11px;
+    border-bottom-left-radius: 11px;
+  }
+  
+  .searchTerm::placeholder{
+      color: white;
+  } 

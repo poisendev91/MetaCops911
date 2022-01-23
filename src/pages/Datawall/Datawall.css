@@ -1,0 +1,25 @@
+.datawall_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    min-height: 80vh;
+}
+
+
+.upper_lower_datawall{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+.upper_datawall , .lower_datawall{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}

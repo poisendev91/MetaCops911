@@ -1,0 +1,12 @@
+.collection_name_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+}
+
+
+.collection_name_container .text{
+    display: flex;
+    flex-direction: column;
+}

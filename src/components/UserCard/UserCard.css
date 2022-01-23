@@ -1,0 +1,40 @@
+.card-itm {
+    margin-left: 20px;
+    font-size: 15px;
+}
+.card__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px 5px 10px;
+}
+.card__img {
+    border-radius: 25px;
+    width: 100%;
+}
+.price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.price img {
+    height: 14px;
+    width: 14px;
+}
+.card__price small {
+    text-align: left;
+}
+.react {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+}
+.item__card {
+    border: 1px solid lightgray;
+    padding: 0px !important;
+    border-radius: 25px;
+}
+/* .items {
+    display: flex;
+    justify-content: center;
+} */

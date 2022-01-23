@@ -1,0 +1,43 @@
+.lowerleft_rightCol {
+    width: 250px;
+    height: 280px;
+    background-color: #232b31;
+}
+
+.lowerleft_leftCol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.lowerleft_leftCol_duals {
+    height: 135px;
+    width: 250px;
+    background-color: #232b31;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+.lowerleft_leftCol_duals_twice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.lower_boxed {
+    height: 135px;
+    width: 120px;
+    background-color: #232b31;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}

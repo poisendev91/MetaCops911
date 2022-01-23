@@ -1,0 +1,16 @@
+.ImageNumberedText_heading{
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 50px 0;
+    font-weight: 600;
+}
+
+.ImageNumberedText_items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+    gap: 35px;
+}

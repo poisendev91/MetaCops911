@@ -1,0 +1,21 @@
+.alllaunches_container {
+    border: 1px solid #4d3d5c;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 16px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.explore__all__launches{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media (max-width: 768px){
+    .explore__all__launches{
+        padding: 0 23px;
+    }
+}

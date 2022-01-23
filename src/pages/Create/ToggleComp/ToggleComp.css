@@ -1,0 +1,14 @@
+.toggle_comp_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: 1px solid #e5e8eb;
+}
+
+.toggle_comp_left_col{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}

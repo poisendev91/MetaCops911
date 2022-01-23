@@ -1,0 +1,40 @@
+.chatHeader{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #000;
+    z-index: 76;
+}
+.chatHeader__profile{
+    display: flex;
+}
+.chatHeader__p{
+    font-size: 15px;
+    color: gray;
+}
+.details{
+    margin-left: 20px;
+}
+.chatHeader__details svg{
+    font-size: 25px;
+}
+.profile__avatar svg{
+    font-size: 50px;
+}
+.username{
+    color: #fff;
+}
+@media(max-width: 1024px){
+    .chatHeader{
+        width: 71%;
+    }
+}
+@media(max-width: 425px){
+    .chatHeader{
+        padding: 10px 49px 10px 0;
+        width: 100%
+    }
+}

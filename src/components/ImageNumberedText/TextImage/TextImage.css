@@ -1,0 +1,30 @@
+.TextImage_container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 260px;
+}
+.TextImage_leftCol{
+    position:relative;
+}
+
+.TextImage_leftCol img{
+    border-radius:50%;
+    border: 2px solid purple;
+}
+.TextImage_rightCol{
+    display:flex;
+    /* align-items:center; */
+    justify-content:center;
+    flex-direction:column;
+}
+.TextImage_rightCol p{
+    color: white;
+    margin: 0 !important;   
+}
+
+.TextImage_rightCol span{
+    color:#a199a6;
+    font-size:large;
+}

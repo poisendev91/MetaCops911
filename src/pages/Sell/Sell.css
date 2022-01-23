@@ -1,0 +1,16 @@
+.sell_outermost {
+    background-color: #000;
+    height: 80vh;
+    padding: 20px 0;
+}
+
+.sell_outer_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    font-size: large;
+    height: 60vh;
+}

@@ -1,0 +1,23 @@
+.ThreeHeading_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px 30px;
+    color: white;
+    border: 1px solid white;
+    padding: 20px 20px;
+    border-radius:5px;
+}
+
+@media (max-width: 768px){
+    .ThreeHeading_container{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .stats_inner_container h1{
+        font-size:26px
+    }
+    .ThreeHeading_container h3{
+        font-size: 22px;
+    }
+}

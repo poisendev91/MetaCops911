@@ -1,0 +1,49 @@
+.heading___launchpad__form{
+    margin-top: 0 !important;
+    padding-top: 24px;
+    font-weight: 600 !important;
+    font-size: 2.5rem !important;
+}
+.launchpad___form___main{
+    background-color: #010101;
+    color: #e4e4e4;
+    border: 0;
+}
+.launchpad___form{
+    padding-bottom: 3rem;
+}
+.logo___upload___text{
+    font-size: 14px;
+}
+
+.logo___upload___div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.checkbox__text__launchpad{
+    font-size: 14px;
+}
+.launchpad___button{
+    padding: 14px 0 !important;
+    font-size: 1.3rem !important;
+}
+
+.launchpad___form div div div label, .launchpad___form div div div textarea{
+    font-size: 1.3rem !important;
+    color: white !important;
+}
+.launchpad___form div div div label[data-shrink = "true"]{
+    font-size: 2rem !important;
+    color: #efefef !important;
+}
+.launchpad___form div div div div input, .launchpad___form div div div textarea{
+    color: #cacaca;
+    border-bottom: 1px solid rgb(255 255 255 / 42%);
+}
+.row-radio-buttons-group label span, .checkbox___terms___launchpad span{
+    color: #efefef;
+    font-weight: 600;
+    font-size: 1.5rem;
+}

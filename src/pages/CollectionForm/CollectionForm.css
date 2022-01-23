@@ -1,0 +1,50 @@
+.heading___collection__form{
+    margin-top: 0 !important;
+    padding-top: 24px;
+    font-weight: 600 !important;
+    font-size: 2.5rem !important;
+}
+.collection___form___main{
+    background-color: #010101;
+    color: #e4e4e4;
+    border: 0;
+}
+.collection___form{
+    padding-bottom: 3rem;
+}
+.logo___upload___text{
+    font-size: 14px;
+}
+
+.logo___upload___div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.checkbox__text__collection{
+    font-size: 14px;
+}
+.collection___button{
+    padding: 14px 0 !important;
+    font-size: 1.3rem !important;
+}
+
+.collection___form div div div label, .collection___form div div div textarea{
+    font-size: 1.3rem !important;
+    color: white !important;
+}
+.collection___form div div div label[data-shrink = "true"]{
+    font-size: 2rem !important;
+    color: #efefef !important;
+}
+.collection___form div div div div input, .collection___form div div div textarea{
+    color: #cacaca;
+    border-bottom: 1px solid rgb(255 255 255 / 42%);
+}
+
+.row-radio-buttons-group label span, .checkbox___terms___collection span{
+    color: #efefef;
+    font-weight: 600;
+    font-size: 1.5rem;
+}

@@ -1,0 +1,19 @@
+.search__input {
+    width: 100%;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.select__field {
+    width: 100%;
+    padding: 12px 10px;
+    border-radius: 10px;
+}
+
+.user__item__list {
+    margin-top: 130px;
+}
+.search__items {
+    display: flex;
+    justify-content: center;
+}

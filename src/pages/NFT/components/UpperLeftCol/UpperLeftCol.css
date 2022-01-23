@@ -1,0 +1,30 @@
+.upperleftcol_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media screen and (max-width:768px) {
+
+    .upperleft_image{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .astro_image{
+        width: 60%;
+    }
+
+    .left_accord{
+        width: 350px !important;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .left_accord{
+        width: 320px !important;
+    }
+}

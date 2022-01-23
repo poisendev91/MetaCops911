@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.stats_outer_containter{
+    background-color:#1e1938;
+    min-height:100vh;
+    height: 100%;
+    padding: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.stats_inner_container{
+    background-color:#352d4e;
+    height: 100%;
+    border-radius: 5px;
+    padding: 40px 20px;
+}
+
+@media (max-width: 768px){
+    .stats_outer_containter{
+        padding: 50px 8px;
+    }
+}
