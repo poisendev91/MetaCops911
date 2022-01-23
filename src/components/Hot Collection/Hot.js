@@ -57,7 +57,7 @@ const Hot = () => {
 
 
     return (
-        <Container>
+        <Container style={{padding:"6px"}}>
             <h1>
                 <b>NFT with Utility 🚀</b>
             </h1>
@@ -66,22 +66,22 @@ const Hot = () => {
                     <div>
                         <div style={{ display: "flex",padding: "10px"}}>
                             <div className="hot-box">
-                            <h3>
+                            <h4>
                             911 verified METACOPS are coming to solana. 
                             Our nft's can be staked to earn $MCOP, our utility token.
-                         </h3>
+                         </h4>
                          <br/>
                          
                             </div>
                             <div className="hot-box">
-                                <h3>
+                                <h4>
                                     Earned $MCOP could be spent in the upcoming games, breeding of NFT's and exchanges plateforms.
-                                </h3>
+                                </h4>
                             </div>
                             <div className="hot-box">
-                            <h3>
+                            <h4>
                              Also by linking your wallet you will get 1:1 version of the 3D Metacop NFT in our P2E game at later stage.
-                         </h3>
+                         </h4>
                             </div>
                        
                           
