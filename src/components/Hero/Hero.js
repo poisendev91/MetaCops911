@@ -47,48 +47,17 @@ const Hero = () => {
                     </Grid>
                     
         <div className="hero_right_col">
-        <Grid item xs={12} sm={12} md={6} lg={6} >
+        <Grid item  >
                         <div className="hero_four_boxes_container" style={{ overflow: "hidden" }}>
                             <div className="right-hero-div ">
-                                <div style={{ display: "flex", flexDirection: "column" }}>
-                                    <img src={Astro} alt="hero" />
-                                    <img src={Collection3} alt="hero" />
-                                    <img
-                                        src="https://www.arabnews.pk/sites/default/files/styles/n_670_395/public/2021/09/09/2802471-1141576147.jpg?itok=iBUxiaoP"
-                                        alt="hero"
-                                        />
-                                    <img src={Collection2} alt="hero" />
-                                </div>
-                                <div
-                                    style={{
-                                        display: "flex",
-                                        flexDirection: "column",
-                                        marginTop: "160px",
-                                    }}
-                                    >
+                                <div style={{ display: "flex", flexDirection: "row" }}>
+                            
                                     <img src={Collection3} alt="hero" />
                                     <img src={Collection} alt="hero" />
                                     <img src={Collection2} alt="hero" />
-                                    <img
-                                        src="https://www.arabnews.pk/sites/default/files/styles/n_670_395/public/2021/09/09/2802471-1141576147.jpg?itok=iBUxiaoP"
-                                        alt="hero"
-                                        />
+                                  
                                 </div>
-                                <div
-                                    style={{
-                                        display: "flex",
-                                        flexDirection: "column",
-                                        marginTop: "80px",
-                                    }}
-                                    >
-                                    <img src={Astro} alt="hero" />
-                                    <img src={Collection2} alt="hero" />
-                                    <img
-                                        src="https://www.arabnews.pk/sites/default/files/styles/n_670_395/public/2021/09/09/2802471-1141576147.jpg?itok=iBUxiaoP"
-                                        alt="hero"
-                                        />
-                                    <img src={Collection} alt="hero" />
-                                </div>
+                                
                             </div>
                         </div>
                     </Grid>
