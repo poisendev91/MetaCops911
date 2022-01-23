@@ -11,7 +11,7 @@ const index = () => {
             <Hero />
             <Hot />
             <LatestSale />
-            <Carousel />
+            {/* <Carousel /> */}
         </div>
     );
 };

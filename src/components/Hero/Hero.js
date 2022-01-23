@@ -12,7 +12,7 @@ const Hero = () => {
         <div>
             <div className="MuiContainer-root MuiContainer-maxWidthLg css-1qsxih2 ">
 
-            <div className="hero_outer_container">
+            <div className="hero_outer_container" >
             
             <Grid container spacing={0}>
                 <div className="hero_container">
