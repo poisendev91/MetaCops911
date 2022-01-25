@@ -17,7 +17,7 @@ export const DataFaqsBuyerSellers = [
     },
     {
         quest: "How do I get a free Metacop NFT?",
-        ans: "👉 We are hosting giveaways on our social media accounts @metacops, please follow us there to be notified of our giveaways.",
+        ans: "👉 We are hosting giveaways on our discord server and social media accounts @metacops911, please follow us there to be notified of our giveaways.",
     },
 ];
 
