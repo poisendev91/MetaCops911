@@ -57,14 +57,14 @@ const Hot = () => {
 
 
     return (
-        <Container style={{padding:"6px"}}>
+        <Container style={{padding:"0px"}}>
             <h1>
                 <b>NFT with Utility 🚀</b>
             </h1>
             <Slideshow >
                
                     <div>
-                        <div style={{ display: "flex",padding: "10px"}}>
+                        <div style={{ display: "flex",padding: "1px"}}>
                             <div className="hot-box">
                             <h4>
                             911 verified METACOPS are coming to solana. 
