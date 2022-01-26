@@ -16,7 +16,7 @@ const FeaturedLaunch = () => {
                     <div className="featuredlaunch_clipboard">
                         <div className="featuredlaunch_box">
                             <span>ITEMS</span>
-                            <div className="featuredlaunch_quantity">911</div>
+                            <div className="featuredlaunch_quantity">2911</div>
                         </div>
                         <div className="featuredlaunch_box">
                             <span>PRICE</span>

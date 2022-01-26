@@ -67,7 +67,7 @@ const Hot = () => {
                         <div style={{ display: "flex",padding: "1px"}}>
                             <div className="hot-box">
                             <h4>
-                            911 verified METACOPS are coming to solana. 
+                            2911 verified METACOPS are coming to solana. 
                             Our nft's can be staked to earn $MCOP, our utility token.
                          </h4>
                          <br/>
