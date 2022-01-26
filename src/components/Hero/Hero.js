@@ -28,15 +28,15 @@ const Hero = () => {
                                      Built with Solana.
                                 </b>
                             </h1>
-                            <div className="hero_right_col">
-                                <p className="hero_para">
+                            <div className="hero_right_col" style={{ marginLeft:"20px" }} >
+                                <p className="hero_para" style={{marginLeft:"20px"}}>
                                     A Solana NFT DAO Project that creates
                                     <br />
                                     new blockchain technology for staking and breeding of NFT's to be evolved.
                                 </p>
                                 <div className="hero_buttons">
-                                    <Link className="hero_btn1" to="/roadmap" activeStyle={{ fontWeight: "bold" }}>
-                Explore
+                                    <Link className="hero_btn1" to="/roadmap" activeStyle={{ fontWeight: "bold",}}>
+                Roadmap
                 </Link>
                                     <Link className="hero_btn2" to="/mint" activeStyle={{ fontWeight: "bold" }}>
                 Mint Soon
