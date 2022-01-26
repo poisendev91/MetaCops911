@@ -4,3 +4,8 @@
     border-radius: 50%;
     margin-top: -35px;
 }
+@media screen and (max-width: 768px) {
+  h3{
+      font-size: 18px !important;
+  }
+}

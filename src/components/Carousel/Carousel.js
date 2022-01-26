@@ -2,33 +2,33 @@ import React from "react";
 import Container from "@mui/material/Container";
 import Slideshow from "./Slideshow";
 import Astro from "../../assets/astro.png";
-import clothingCollection from "../../assets/clothingcollection.png";
-import vehicleCollection from "../../assets/vehiclecollection.png";
-import firearmCollection from "../../assets/firearmcollection.png";
+import clothingCollection from "../../assets/army.png";
+import vehicleCollection from "../../assets/sherrif.png";
+import firearmCollection from "../../assets/swat.png";
 import "./Carousel.css";
 
 const data = [
     {
         head: "white-rabbit",
         img: clothingCollection,
-        para: "1500 Cool, Unique, Algorithmically generated clothings to wear in MetaLand.",
+        para: "Web3 Master",
     },
     {
         head: "Mugambow ",
         img: vehicleCollection,
-        para: "1500 Hot, Unique, Algorithmically generated Vehicles to travel in MetaLand.",
+        para: "Marketing guru",
     },
     {
-        head: "Virtual Cop",
+        head: "Page-7",
         img: firearmCollection,
-        para: "1500 Danger, Unique, Algorithmically generated weapons to use in MetaLand.",
+        para: "Virtual Artist",
     },
    
 ];
 
 const Carousel = () => {
     return (
-        <Container>
+        <Container style={{paddingBottom:"50px"}}>
             <h1>
                 <b>Meet The Team 🚀</b>
             </h1>
@@ -38,6 +38,7 @@ const Carousel = () => {
                         <div>
                             <div style={{ padding: 8 }}>
                                 <img
+                                className=""
                                     src={item.img}
                                     alt="placeholder"
                                     style={{ width: "100%", borderRadius: "12px" }}
@@ -52,11 +53,11 @@ const Carousel = () => {
                                         padding: "10px 0",
                                     }}
                                 >
-                                    <img className="hot-boxes-logo" src={Astro} />
+                                    {/* <img className="hot-boxes-logo" src={Astro} /> */}
                                     <h3 style={{ color: "white", textAlign: "center" }}>
                                         {item.head}
                                     </h3>
-                                    <span style={{ color: "white", textAlign: "center" }}>
+                                    <span style={{ color: "black", textAlign: "center" }}>
                                         {item.para}
                                     </span>
                                   

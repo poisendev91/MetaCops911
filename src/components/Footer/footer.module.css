@@ -129,7 +129,7 @@ li {
     margin-top: 10px;
     margin-right: 20px;
     margin-left: 0px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     transition: 0.5s;
     float: left;
     color: #c2d6d7;
@@ -171,8 +171,13 @@ li {
 
 @media screen and (max-width: 510px) {
     .col .social {
-        display: grid;
+        display: flex;
         grid-template-columns: 50% 50%;
         width: fit-content;
     }
+}
+@media screen and (max-width: 510px) {
+.social {
+      width: 250px !important;
+}
 }

@@ -43,7 +43,7 @@ body {
 }
 
 .hero_right_col {
-    margin: 10px 20px;
+    margin-left:20px;
     display: flex;
     flex-direction: column;
     gap: 30px;

@@ -41,8 +41,8 @@ const Hot = () => {
         setLink2(!link2);
     };
     return (
-        <Container style={{ marginTop: "50px", paddingBottom: "50px" }}>
-            <div className="hot_container">
+        <Container style={{ marginTop: "50px",  }}>
+            <div >
                 <h1>FAQ's 🌟</h1>
                 <div className="faqs___section">
             <div className="w-full">
