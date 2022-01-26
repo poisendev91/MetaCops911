@@ -1,11 +1,22 @@
 .hot-boxes-logo {
-    width: 65px;
-    height: 65px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
-    margin-top: -35px;
+    margin-top: -15px;
 }
 @media screen and (max-width: 768px) {
   h3{
-      font-size: 18px !important;
+      font-size: 19px !important;
   }
+  span{
+      font-size: 14px !important;
+  }
+  .hot-boxes-logo {
+    width: 40px !important;
+    height: 40px !important;
+    margin-top: -15px;
+}
+}
+span{
+    font-size: 16px;
 }

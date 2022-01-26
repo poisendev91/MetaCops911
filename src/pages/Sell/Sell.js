@@ -26,7 +26,7 @@ const Profile = () => {
                                 Introducing website, Twitter and discord.
                             </li>
                             <li>
-                                Building Community and raising awarness to NFT staking.
+                                Building Community and raising awareness to NFT staking.
                             </li>
                             <li>
                                 Opening pre-sale whitelist for discord members.
@@ -56,7 +56,7 @@ const Profile = () => {
                                 80% Verified METACOPS has been minted and NFT holders can login to stake your own NFT's.
                             </li>
                             <li>
-                                sweep floor initiative 20% Community funds to keep floor pricing high.
+                                Sweep floor initiative 20% Community funds to keep floor pricing high.
                             </li>
                         </ul>
                     </VerticalTimelineElement>
@@ -77,14 +77,14 @@ const Profile = () => {
                                Distribution of $MCOP to the people staking Metacops Nft.
                             </li>
                             <li>
-                               Introducing breeding of the NFT's, and providing Serum to breeed METACOPS.
+                               Introducing breeding of the NFT's, and providing Serum to breed METACOPS.
                             </li>
                             <li>
                                 Community Funds to be used to buy land in SANDBOX to build a METACOPS holder club.
                                 
                             </li>
                             <li>
-                            All holders will have direct invitation to our Meta-Festival.
+                            All holders will have direct invitation to our Meta-Festivals.
                             </li>
                         </ul>
                     </VerticalTimelineElement>
@@ -105,7 +105,7 @@ const Profile = () => {
                                 Introducing our own DAOs to community and providing governence to NFT holders.
                             </li>
                             <li>
-                                First glipmse👀 to our own Metaverse in Solana.
+                                First glimpse👀 to our own Metaverse in Solana.
                             </li>
                             
                         </ul>

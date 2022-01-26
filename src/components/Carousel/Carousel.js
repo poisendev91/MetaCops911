@@ -6,22 +6,26 @@ import clothingCollection from "../../assets/army.png";
 import vehicleCollection from "../../assets/sherrif.png";
 import firearmCollection from "../../assets/swat.png";
 import "./Carousel.css";
+import instagram from '../../assets/instagram.png'
 
 const data = [
     {
         head: "white-rabbit",
         img: clothingCollection,
         para: "Web3 Master",
+        instagramid:"https://www.instagram.com/shubham_kunwar__/"
     },
     {
         head: "Mugambow ",
         img: vehicleCollection,
         para: "Marketing guru",
+        instagramid:"https://www.instagram.com/vishalshukla.22/"
     },
     {
         head: "Page-7",
         img: firearmCollection,
         para: "Virtual Artist",
+        instagramid:"https://www.instagram.com/saint.n.sinner._/"
     },
    
 ];
@@ -38,7 +42,6 @@ const Carousel = () => {
                         <div>
                             <div style={{ padding: 8 }}>
                                 <img
-                                className=""
                                     src={item.img}
                                     alt="placeholder"
                                     style={{ width: "100%", borderRadius: "12px" }}
@@ -53,8 +56,18 @@ const Carousel = () => {
                                         padding: "10px 0",
                                     }}
                                 >
-                                    {/* <img className="hot-boxes-logo" src={Astro} /> */}
-                                    <h3 style={{ color: "white", textAlign: "center" }}>
+                                     <a
+                  href={item.instagramid}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img  className="hot-boxes-logo"
+                    src={instagram}
+                    alt="placeholder"
+                   
+                  />
+                </a>
+                                    <h3 style={{ color: "white", textAlign: "center", marginTop:"10px !important" }}>
                                         {item.head}
                                     </h3>
                                     <span style={{ color: "black", textAlign: "center" }}>

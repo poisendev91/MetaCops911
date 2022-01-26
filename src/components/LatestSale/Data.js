@@ -13,7 +13,7 @@ export const DataFaqsBuyerSellers = [
     },
     {
         quest: "How do I buy a Metacop NFT?",
-        ans: "👉 You will be able to purchase a See Do NFT through our public minting sale, or once the collection is live through our solsea.io collection.",
+        ans: "👉 You will be able to purchase Metacop NFT through our public minting sale, or once the collection is live through our solsea.io collection.",
     },
     {
         quest: "How do I get a free Metacop NFT?",
