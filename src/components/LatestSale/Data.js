@@ -5,7 +5,7 @@ export const DataFaqsBuyerSellers = [
     },
     {
         quest: "Will there be a whitelist and how to get on",
-        ans: "👉 Yes, you can get whitelisted by inviting 3 friends. The second method is to be  active in the community and level up to obtain your spot on the whitelist. Required Rank :4",
+        ans: "👉 Yes, you can get whitelisted by inviting 5 friends. The second method is to be  active in the community and level up to obtain your spot on the whitelist. Required Rank :5",
     },
     {
         quest: "What form of payment do they take?",
