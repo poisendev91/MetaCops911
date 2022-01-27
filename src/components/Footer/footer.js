@@ -63,7 +63,7 @@ const Footer = () => (
             <ul className={style.social}>
               <li>
                 <a
-                  href="https://discord.gg/BGVqwU3xW6"
+                  href="https://discord.gg/X4QpamA4KD"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
