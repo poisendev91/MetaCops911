@@ -5,6 +5,7 @@ import Button from "../../Button/Button";
 import { Link } from "react-router-dom";
 import Switch from "@mui/material/Switch";
 import { NavDropdown } from "react-bootstrap";
+import discord from '../../../assets/discord.png'
 
 const label = { inputProps: { "aria-label": "Switch demo" } };
 
@@ -36,7 +37,21 @@ const Web = ({ expanded }) => {
             style={{ display: "flex", alignItems: "center" }}
         >
            
-
+           <li>
+            <div >
+                        <a
+                  href="https://discord.gg/5nTgdq73P8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={discord}
+                    alt="placeholder"
+                    style={{width:"45px", borderRadius: "12px"}}
+                  />
+                </a>
+                        </div>
+            </li>
             <li>
                 <Link className="navbar__link" to="/mint" activeStyle={{ fontWeight: "bold" }}>
                   Mint
@@ -52,11 +67,7 @@ const Web = ({ expanded }) => {
                   Socials
                 </Link>
             </li>
-            {/* <li>
-                <Link className="navbar__link" to="/profile" activeStyle={{ fontWeight: "bold" }}>
-                 
-                </Link>
-            </li> */}
+           
             <li>
                 <Link className="navbar__link" to="/whitepaper" activeStyle={{ fontWeight: "bold" }}>
                  Whitepaper
