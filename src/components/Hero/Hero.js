@@ -29,7 +29,7 @@ const Hero = () => {
                                 </b>
                             </h1>
                             <div className="hero_right_col" style={{ marginLeft:"20px" }} >
-                                <p className="hero_para" style={{marginLeft:"20px"}}>
+                                <p className="hero_para" >
                                     A Solana NFT DAO Project that creates
                                     <br />
                                     new blockchain technology for staking and breeding of NFT's to be evolved.
