@@ -96,7 +96,7 @@ const FeaturedLaunch = (props: HomeProps) => {
                 );
                 setCandyMachine(cndy);
                 setItemsAvailable(cndy.state.itemsAvailable);
-                setItemsRemaining(cndy.state.itemsRemaining);
+                setItemsRemaining(cndy.state.itemsRemaining- 2511);
                 setItemsRedeemed(cndy.state.itemsRedeemed);
             } catch (e) {
                 console.log("There was a problem fetching Candy Machine state");
@@ -116,10 +116,7 @@ const FeaturedLaunch = (props: HomeProps) => {
             if (!isWhitelisted) {
                 throw new Error("You are not whitelisted");
             }
-            if (res_num - 1 < 0) {
-                console.log("confirmed");
-                throw new Error("Not enough reserves");
-            }
+          
             setIsUserMinting(true);
             document.getElementById("#identity")?.click();
             if (wallet.connected && candyMachine?.program && wallet.publicKey) {
@@ -141,19 +138,7 @@ const FeaturedLaunch = (props: HomeProps) => {
                         message: "Congratulations! Mint succeeded!",
                         severity: "success",
                     });
-                    const to_send = await JSON.stringify({ reserve: res_num - 1 });
-                    await fetch(
-                        `${api_url}/whitelisted/update/${(
-                            wallets as anchor.Wallet
-                        ).publicKey.toString()}/${process.env.REACT_APP_SECRET_KEY}`,
-                        {
-                            method: "PUT",
-                            headers: {
-                                "Content-Type": "application/json",
-                            },
-                            body: to_send,
-                        },
-                    );
+                   
                 } else {
                     setAlertState({
                         open: true,
@@ -207,7 +192,7 @@ const FeaturedLaunch = (props: HomeProps) => {
     }, [anchorWallet, props.candyMachineId, props.connection, refreshCandyMachineState]);
 
     const currentDate = new Date(new Date().toUTCString()).getTime();
-    const launchDate = new Date(Date.UTC(2022, 1, 14, 15, 0, 0, 0)).getTime();
+    const launchDate = new Date(Date.UTC(2022, 1, 14, 0, 0, 0, 0)).getTime();
 
     const renderer: FC<Props> = ({ days, hours, minutes, seconds, completed }) => {
         if (completed) {
@@ -425,7 +410,7 @@ const FeaturedLaunch = (props: HomeProps) => {
                                             <h2 style={{ marginBottom: "-35px", margin: "auto" }}>
                                                 {wallet && (
                                                     <h2>
-                                                        Remaining Supply : {itemsRemaining - 2511}
+                                                        Remaining Supply : {itemsRemaining }
                                                     </h2>
                                                 )}
                                             </h2>

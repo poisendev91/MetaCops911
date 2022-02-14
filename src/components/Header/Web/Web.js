@@ -37,7 +37,7 @@ const Web = ({ expanded }) => {
             style={{ display: "flex", alignItems: "center" }}
         >
            
-           {/* <li>
+           <li>
             <div >
                         <a
                   href="https://discord.gg/5nTgdq73P8"
@@ -47,11 +47,11 @@ const Web = ({ expanded }) => {
                   <img
                     src={discord}
                     alt="placeholder"
-                    style={{width:"45px", borderRadius: "12px"}}
+                    style={{width:"42px", borderRadius: "15px", marginBottom:"-5px"}}
                   />
                 </a>
                         </div>
-            </li> */}
+            </li>
             <li>
                 <Link className="navbar__link" to="/mint" activeStyle={{ fontWeight: "bold" }}>
                   Mint
