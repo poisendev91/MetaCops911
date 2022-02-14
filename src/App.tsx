@@ -12,7 +12,13 @@ import Contact from "./pages/Contact/Contact";
 import Launchpad from "./pages/Launchpad/Launchpad";
 import CollectionUI from "./pages/CollectionUI/CollectionUI";
 import Explore from "./pages/Explore/Explore";
-
+const cors=require("cors");
+const corsOptions ={
+    origin:'*', 
+    credentials:true,            //access-control-allow-credentials:true
+    optionSuccessStatus:200,
+ }
+ 
 
 
 

@@ -96,7 +96,7 @@ const FeaturedLaunch = (props: HomeProps) => {
                 );
                 setCandyMachine(cndy);
                 setItemsAvailable(cndy.state.itemsAvailable);
-                setItemsRemaining(cndy.state.itemsRemaining- 2511);
+                setItemsRemaining(cndy.state.itemsRemaining);
                 setItemsRedeemed(cndy.state.itemsRedeemed);
             } catch (e) {
                 console.log("There was a problem fetching Candy Machine state");
@@ -407,13 +407,7 @@ const FeaturedLaunch = (props: HomeProps) => {
                                                 isMinting={isUserMinting}
                                                 onMint={onMint}
                                             />
-                                            <h2 style={{ marginBottom: "-35px", margin: "auto" }}>
-                                                {wallet && (
-                                                    <h2>
-                                                        Remaining Supply : {itemsRemaining }
-                                                    </h2>
-                                                )}
-                                            </h2>
+                                            
                                             <h2 style={{ margin: "auto" }}>
                                                 {wallet && <h2>Early Bird Supply : 400</h2>}
                                             </h2>
