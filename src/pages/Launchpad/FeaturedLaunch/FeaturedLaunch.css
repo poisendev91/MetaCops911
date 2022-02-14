@@ -1,7 +1,6 @@
 .featuredlaunch_container {
     padding: 50px;
     background-color: #1c1326;
-    border-radius: 24px;
     display: flex;
     gap: 20px;
     justify-content: center;
@@ -29,7 +28,7 @@
 }
 
 .featuredlaunch_tag {
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 500;
     color: white;
     background: hsla(0, 0%, 100%, 0.1);
@@ -68,11 +67,12 @@
 
 .featuredlaunch_box span{
     color: #b4abba;
-    font-size: 11px;
+    font-size: 22px;
 }
 
 .featuredlaunch_quantity{
     color: white;
+    font-size: 18px;
 }
 
 @media (max-width: 768px){

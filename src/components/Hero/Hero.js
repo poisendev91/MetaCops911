@@ -15,7 +15,7 @@ const Hero = () => {
             <div className="hero_outer_container" >
             
             <Grid container spacing={0}>
-                <div className="hero_container">
+                <div className="hero_container" style={{marginLeft:"auto",marginRight:"auto"}}>
                     <Grid item xs={12} sm={12} md={6} lg={6}>
                         <div style={{ textAlign: "left" }}>
                             <h1 className="hero_head">
@@ -35,11 +35,11 @@ const Hero = () => {
                                     new blockchain technology for staking and breeding of NFT's to be evolved.
                                 </p>
                                 <div className="hero_buttons">
-                                    <Link className="hero_btn1" to="/roadmap" activeStyle={{ fontWeight: "bold",}}>
+                                    {/* <Link className="hero_btn1" to="/roadmap" activeStyle={{ fontWeight: "bold",}}>
                 Roadmap
-                </Link>
+                </Link> */}
                                     <Link className="hero_btn2" to="/mint" activeStyle={{ fontWeight: "bold" }}>
-                Mint Soon
+                Mint Live
                 </Link>
                                 </div>
                             </div>

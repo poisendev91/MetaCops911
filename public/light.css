@@ -83,6 +83,7 @@ body {
     cursor: pointer;
     text-transform: uppercase;
     letter-spacing: 2px;
+    width: 100%;
 
     -webkit-transition: -webkit-box-shadow 0.3s ease;
     transition: -webkit-box-shadow 0.3s ease;
@@ -99,9 +100,11 @@ body {
     font-weight: 900;
     text-decoration: none;
     padding: 8px 40px;
-    font-size: 14px;
+    font-size: 20px;
     border: none;
     cursor: pointer;
+    margin:auto;
+    width: 100%;
     text-transform: uppercase;
     letter-spacing: 2px;
     -webkit-transition: -webkit-box-shadow 0.3s ease;
