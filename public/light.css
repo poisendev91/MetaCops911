@@ -24,7 +24,7 @@ body {
 .hero_container {
     display: flex;
     align-items: center;
-
+    margin-right: 12px;
     padding-left: 0%;
 }
 
@@ -38,8 +38,9 @@ body {
     letter-spacing: 1px;
     line-height: 40px;
     margin: 0;
+ 
     color: white;
-    margin-left: 20px;
+    margin-left: 12px;
 }
 
 .hero_right_col {
@@ -83,7 +84,7 @@ body {
     cursor: pointer;
     text-transform: uppercase;
     letter-spacing: 2px;
-    width: 100%;
+    width: 50%;
 
     -webkit-transition: -webkit-box-shadow 0.3s ease;
     transition: -webkit-box-shadow 0.3s ease;
@@ -104,7 +105,8 @@ body {
     border: none;
     cursor: pointer;
     margin:auto;
-    width: 100%;
+    width: 80%;
+    margin-left: -10px;
     text-transform: uppercase;
     letter-spacing: 2px;
     -webkit-transition: -webkit-box-shadow 0.3s ease;

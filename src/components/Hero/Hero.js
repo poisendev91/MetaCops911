@@ -28,7 +28,7 @@ const Hero = () => {
                                      Built with Solana.
                                 </b>
                             </h1>
-                            <div className="hero_right_col" style={{ marginLeft:"20px" }} >
+                            <div className="hero_right_col" style={{ marginLeft:"10px" }} >
                                 <p className="hero_para" >
                                     A Solana NFT DAO Project that creates
                                     <br />
