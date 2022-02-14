@@ -1,6 +1,11 @@
-import * as anchor from '@project-serum/anchor';
+import * as anchor from "@project-serum/anchor";
 
-import { MintLayout, TOKEN_PROGRAM_ID, Token } from '@solana/spl-token';
+import {
+  MintLayout,
+  TOKEN_PROGRAM_ID,
+  Token,
+} from "@solana/spl-token";
+
 import { SystemProgram } from '@solana/web3.js';
 import { sendTransactions } from './connection';
 
@@ -13,12 +18,18 @@ import {
 } from './utils';
 
 export const CANDY_MACHINE_PROGRAM = new anchor.web3.PublicKey(
-  'cndy3Z4yapfJBmL3ShUp5exZKqR3z33thTzeNMm2gRZ',
+  "cndy3Z4yapfJBmL3ShUp5exZKqR3z33thTzeNMm2gRZ"
 );
 
 const TOKEN_METADATA_PROGRAM_ID = new anchor.web3.PublicKey(
-  'metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s',
+  "metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s"
 );
+
+export interface CandyMachine {
+  id: anchor.web3.PublicKey,
+  program: anchor.Program;
+  state: CandyMachineState;
+}
 
 interface CandyMachineState {
   itemsAvailable: number;
@@ -28,7 +39,6 @@ interface CandyMachineState {
   tokenMint: anchor.web3.PublicKey;
   isSoldOut: boolean;
   isActive: boolean;
-  isPresale: boolean;
   goLiveDate: anchor.BN;
   price: anchor.BN;
   gatekeeper: null | {
@@ -49,16 +59,11 @@ interface CandyMachineState {
   };
 }
 
-export interface CandyMachineAccount {
-  id: anchor.web3.PublicKey;
-  program: anchor.Program;
-  state: CandyMachineState;
-}
-
 export const awaitTransactionSignatureConfirmation = async (
   txid: anchor.web3.TransactionSignature,
   timeout: number,
   connection: anchor.web3.Connection,
+  commitment: anchor.web3.Commitment = 'recent',
   queryStatus = false,
 ): Promise<anchor.web3.SignatureStatus | null | void> => {
   let done = false;
@@ -77,7 +82,6 @@ export const awaitTransactionSignatureConfirmation = async (
       console.log('Rejecting for timeout...');
       reject({ timeout: true });
     }, timeout);
-
     while (!done && queryStatus) {
       // eslint-disable-next-line no-loop-func
       (async () => {
@@ -120,7 +124,7 @@ export const awaitTransactionSignatureConfirmation = async (
   return status;
 };
 
-const createAssociatedTokenAccountInstruction = (
+/* export */ const createAssociatedTokenAccountInstruction = (
   associatedTokenAddress: anchor.web3.PublicKey,
   payer: anchor.web3.PublicKey,
   walletAddress: anchor.web3.PublicKey,
@@ -154,7 +158,7 @@ export const getCandyMachineState = async (
   anchorWallet: anchor.Wallet,
   candyMachineId: anchor.web3.PublicKey,
   connection: anchor.web3.Connection,
-): Promise<CandyMachineAccount> => {
+): Promise<CandyMachine> => {
   const provider = new anchor.Provider(connection, anchorWallet, {
     preflightCommitment: 'recent',
   });
@@ -168,12 +172,6 @@ export const getCandyMachineState = async (
   const itemsRedeemed = state.itemsRedeemed.toNumber();
   const itemsRemaining = itemsAvailable - itemsRedeemed;
 
-  const presale =
-    state.data.whitelistMintSettings &&
-    state.data.whitelistMintSettings.presale &&
-    (!state.data.goLiveDate ||
-      state.data.goLiveDate.toNumber() > new Date().getTime() / 1000);
-
   return {
     id: candyMachineId,
     program,
@@ -183,14 +181,13 @@ export const getCandyMachineState = async (
       itemsRemaining,
       isSoldOut: itemsRemaining === 0,
       isActive:
-        (presale ||
-          state.data.goLiveDate.toNumber() < new Date().getTime() / 1000) &&
-        (state.data.endSettings
-          ? state.data.endSettings.endSettingType.date
-            ? state.data.endSettings.number.toNumber() > new Date().getTime() / 1000
-            : itemsRedeemed < state.data.endSettings.number.toNumber()
+        state.data.goLiveDate &&
+        state.data.goLiveDate.toNumber() < new Date().getTime() / 1000 &&
+        (state.endSettings
+          ? state.endSettings.endSettingType.date
+            ? state.endSettings.number.toNumber() > new Date().getTime() / 1000
+            : itemsRedeemed < state.endSettings.number.toNumber()
           : true),
-      isPresale: presale,
       goLiveDate: state.data.goLiveDate,
       treasury: state.wallet,
       tokenMint: state.tokenMint,
@@ -244,11 +241,10 @@ export const getCandyMachineCreator = async (
 };
 
 export const mintOneToken = async (
-  candyMachine: CandyMachineAccount,
-  payer: anchor.web3.PublicKey,
+    candyMachine: CandyMachine,
+    payer: anchor.web3.PublicKey,
+    mint: anchor.web3.Keypair
 ): Promise<(string | undefined)[]> => {
-  const mint = anchor.web3.Keypair.generate();
-
   const userTokenAccountAddress = (
     await getAtaForMint(mint.publicKey, payer)
   )[0];
@@ -463,5 +459,5 @@ export const shortenAddress = (address: string, chars = 4): string => {
 };
 
 const sleep = (ms: number): Promise<void> => {
-  return new Promise(resolve => setTimeout(resolve, ms));
-};
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}

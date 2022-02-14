@@ -1,88 +1,84 @@
 import styled from 'styled-components';
+import {useEffect, useState} from 'react';
 import Button from '@material-ui/core/Button';
-import { CandyMachineAccount } from './candy-machine';
-import { CircularProgress } from '@material-ui/core';
-import { GatewayStatus, useGateway } from '@civic/solana-gateway-react';
-import { useEffect, useState } from 'react';
+import {CircularProgress} from '@material-ui/core';
+import {GatewayStatus, useGateway} from '@civic/solana-gateway-react';
+import {CandyMachine} from './candy-machine';
+
 
 export const CTAButton = styled(Button)`
-background: linear-gradient(180deg, #604ae5 0%, #813eee 100%);
-text-align: center;
-color: white;
-border-radius: 8px;
-outline: 0;
-margin:auto;
-font-weight: 900;
-text-decoration: none;
-padding: 8px 40px;
-font-size: 15px;
-text-align:center;
-border: none;
-cursor: pointer;
-text-transform: uppercase;
-letter-spacing: 2px;
--webkit-transition: -webkit-box-shadow 0.3s ease;
-transition: -webkit-box-shadow 0.3s ease;
-transition: box-shadow 0.3s ease;
-transition: box-shadow 0.3s ease, -webkit-box-shadow 0.3s ease;
-`; // add your own styles here
+  display: block !important;
+  margin: 0 auto !important;
+  background-color: var(--title-text-color) !important;
+  min-width: 120px !important;
+  font-size: 1em !important;
+`;
 
 export const MintButton = ({
-  onMint,
-  candyMachine,
-  isMinting,
-}: {
-  onMint: () => Promise<void>;
-  candyMachine?: CandyMachineAccount;
-  isMinting: boolean;
+                               onMint,
+                               candyMachine,
+                               isMinting,
+                               isActive,
+                               isSoldOut
+                           }: {
+    onMint: () => Promise<void>;
+    candyMachine: CandyMachine | undefined;
+    isMinting: boolean;
+    isActive: boolean;
+    isSoldOut: boolean;
 }) => {
-  const { requestGatewayToken, gatewayStatus } = useGateway();
-  const [clicked, setClicked] = useState(false);
+    const {requestGatewayToken, gatewayStatus} = useGateway();
+    const [clicked, setClicked] = useState(false);
+    const [isVerifying, setIsVerifying] = useState(false);
 
-  useEffect(() => {
-    if (gatewayStatus === GatewayStatus.ACTIVE && clicked) {
-      onMint();
-      setClicked(false);
-    }
-  }, [gatewayStatus, clicked, setClicked, onMint]);
-
-  const getMintButtonContent = () => {
-    if (candyMachine?.state.isSoldOut) {
-      return 'SOLD OUT';
-    } else if (isMinting) {
-      return <CircularProgress />;
-    } else if (candyMachine?.state.isPresale) {
-      return 'PRESALE MINT';
-    }
-
-    return 'MINT NOW';
-  };
-
-  return (
-    <CTAButton
-    className="featured__launch__button"
-    style={{ width: "33%", fontSize: "larger" }}
-      disabled={
-        candyMachine?.state.isSoldOut ||
-        isMinting ||
-        !candyMachine?.state.isActive
-      }
-      onClick={async () => {
-        setClicked(true);
-        if (candyMachine?.state.isActive && candyMachine?.state.gatekeeper) {
-          if (gatewayStatus === GatewayStatus.ACTIVE) {
-            setClicked(true);
-          } else {
-            await requestGatewayToken();
-          }
-        } else {
-          await onMint();
-          setClicked(false);
+    useEffect(() => {
+        setIsVerifying(false);
+        if (gatewayStatus === GatewayStatus.COLLECTING_USER_INFORMATION && clicked) {
+            // when user approves wallet verification txn
+            setIsVerifying(true);
+        } else if (gatewayStatus === GatewayStatus.ACTIVE && clicked) {
+            console.log('Verified human, now minting...');
+            onMint();
+            setClicked(false);
         }
-      }}
-      variant="contained"
-    >
-      {getMintButtonContent()}
-    </CTAButton>
-  );
+    }, [gatewayStatus, clicked, setClicked, onMint]);
+
+    return (
+        <CTAButton
+            disabled={
+                candyMachine?.state.isSoldOut || isSoldOut ||
+                isMinting ||
+                !isActive ||
+                isVerifying
+            }
+            onClick={async () => {
+                if (isActive && candyMachine?.state.gatekeeper && gatewayStatus !== GatewayStatus.ACTIVE) {
+                    console.log('Requesting gateway token');
+                    setClicked(true);
+                    await requestGatewayToken();
+                } else {
+                    console.log('Minting...');
+                    await onMint();
+                }
+            }}
+            variant="contained"
+        >
+            {!candyMachine ? (
+                "CONNECTING..."
+            ) : candyMachine?.state.isSoldOut || isSoldOut ? (
+                'SOLD OUT'
+            ) : isActive ? (
+                isVerifying ? 'VERIFYING...' :
+                    isMinting ? (
+                        <CircularProgress/>
+                    ) : (
+                        "MINT"
+                    )
+            ) : (candyMachine?.state.goLiveDate ? (
+                "SOON"
+            ) : (
+                "UNAVAILABLE"
+            ))}
+        </CTAButton>
+    );
 };
