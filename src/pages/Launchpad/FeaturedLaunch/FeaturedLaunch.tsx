@@ -207,7 +207,7 @@ const FeaturedLaunch = (props: HomeProps) => {
     }, [anchorWallet, props.candyMachineId, props.connection, refreshCandyMachineState]);
 
     const currentDate = new Date(new Date().toUTCString()).getTime();
-    const launchDate = new Date(Date.UTC(2022, 1, 14, 14, 0, 0, 0)).getTime();
+    const launchDate = new Date(Date.UTC(2022, 1, 14, 15, 30, 0, 0)).getTime();
 
     const renderer: FC<Props> = ({ days, hours, minutes, seconds, completed }) => {
         if (completed) {
