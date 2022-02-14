@@ -12,7 +12,7 @@ import Contact from "./pages/Contact/Contact";
 import Launchpad from "./pages/Launchpad/Launchpad";
 import CollectionUI from "./pages/CollectionUI/CollectionUI";
 import Explore from "./pages/Explore/Explore";
-
+import { SpeedDialAction } from 'devextreme-react/speed-dial-action';
 
 
 
@@ -23,7 +23,9 @@ const App=()=> {
      
     return (
         <Router>
+            
             <Navbar />
+            
             <Switch>
               
                 <Route exact path="/">

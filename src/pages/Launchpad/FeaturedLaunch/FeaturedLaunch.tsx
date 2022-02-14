@@ -233,7 +233,7 @@ const FeaturedLaunch = (props: HomeProps) => {
                         width: "90%",
                         height: "60px",
                         paddingTop: "15px",
-                        paddingLeft:"70px",
+                        paddingLeft:"45px",
                         background:
                             "linear-gradient(180deg, rgb(173 160 255) 0%, rgb(170 198 226) 100%)",
                     }}
