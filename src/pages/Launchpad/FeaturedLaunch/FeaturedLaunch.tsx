@@ -207,7 +207,7 @@ const FeaturedLaunch = (props: HomeProps) => {
     }, [anchorWallet, props.candyMachineId, props.connection, refreshCandyMachineState]);
 
     const currentDate = new Date(new Date().toUTCString()).getTime();
-    const launchDate = new Date(Date.UTC(2022, 1, 14, 15, 30, 0, 0)).getTime();
+    const launchDate = new Date(Date.UTC(2022, 1, 14, 15, 0, 0, 0)).getTime();
 
     const renderer: FC<Props> = ({ days, hours, minutes, seconds, completed }) => {
         if (completed) {
@@ -233,7 +233,7 @@ const FeaturedLaunch = (props: HomeProps) => {
                         width: "90%",
                         height: "60px",
                         paddingTop: "15px",
-                        paddingLeft:"45px",
+                        paddingLeft:"40px",
                         background:
                             "linear-gradient(180deg, rgb(173 160 255) 0%, rgb(170 198 226) 100%)",
                     }}
