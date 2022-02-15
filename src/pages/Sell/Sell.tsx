@@ -41,7 +41,7 @@ const Profile = () => {
                         contentStyle={{ background: "rgb(98,78,213)", color: "#fff" }}
                         contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
                         date=""
-                        iconStyle={{ background: "red", color: "#fff" }}
+                        iconStyle={{ background: "green", color: "#fff" }}
                        
                     >
                         <h3 className="vertical-timeline-element-title">2nd STAGE</h3>
