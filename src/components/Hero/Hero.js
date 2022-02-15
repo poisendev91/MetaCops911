@@ -39,11 +39,7 @@ const Hero = () => {
                 Roadmap
                 </Link>
                                     <Link className="hero_btn2" to="/mint" activeStyle={{ fontWeight: "bold" }}>
-<<<<<<< HEAD
                 Mint: 17 Feb, 2022
-=======
-                 Mint 17 Feb, 2022
->>>>>>> 8ffda0d8b2b2fea6d81e579a6921cc01ee4ce1bd
                 </Link>
                                 </div>
                             </div>
