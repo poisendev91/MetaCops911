@@ -16,7 +16,7 @@ const Profile = () => {
                         className="vertical-timeline-element--work"
                         contentStyle={{ background: "rgb(98,78,213)", color: "#fff" }}
                         contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-                        date="Current Phase"
+                        date="1st Phase Completed "
                         iconStyle={{ background: "green", color: "#fff" }}
                        
                     >
@@ -40,7 +40,7 @@ const Profile = () => {
                         className="vertical-timeline-element--work"
                         contentStyle={{ background: "rgb(98,78,213)", color: "#fff" }}
                         contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-                        date=""
+                        date="Current Phase"
                         iconStyle={{ background: "green", color: "#fff" }}
                        
                     >
