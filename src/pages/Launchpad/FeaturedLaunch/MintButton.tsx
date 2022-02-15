@@ -9,7 +9,17 @@ import {CandyMachine} from './candy-machine';
 export const CTAButton = styled(Button)`
   display: block !important;
   margin: 0 auto !important;
-  background-color: var(--title-text-color) !important;
+  background-color: white !important;
+  background: none;
+  border: none;
+  padding: 1rem 0px;
+  text-align: center;
+  font-size: 2rem;
+  align-items: center;
+  outline: solid 2px;
+  border-radius: 8px;
+  font-weight: 700;
+  min-width: 10rem;
   min-width: 120px !important;
   font-size: 1em !important;
 `;

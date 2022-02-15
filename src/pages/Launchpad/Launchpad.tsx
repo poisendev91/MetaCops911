@@ -1,6 +1,8 @@
 import FeaturedLaunch from "./FeaturedLaunch/FeaturedLaunch"
 import "./Launchpad.css";
-
+import {
+    WalletModalProvider
+} from '@solana/wallet-adapter-react-ui';
 //solana 
 import { createTheme, ThemeProvider } from "@material-ui/core";
 import { useMemo } from "react";
@@ -90,14 +92,14 @@ const Launchpad = () => {
         <ThemeProvider theme={theme}>
         <ConnectionProvider endpoint={endpoint}>
           <WalletProvider wallets={wallets} autoConnect={true}>
-          <WalletDialogProvider>
+            <WalletModalProvider>
               <FeaturedLaunch
                 candyMachineId={candyMachineId}
                 connection={connection}
                 txTimeout={txTimeout}
                 rpcHost={rpcHost}
               />
-             </WalletDialogProvider>
+              </WalletModalProvider>
           </WalletProvider>
         </ConnectionProvider>
       </ThemeProvider>

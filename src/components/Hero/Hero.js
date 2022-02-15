@@ -35,11 +35,11 @@ const Hero = () => {
                                     new blockchain technology for staking and breeding of NFT's to be evolved.
                                 </p>
                                 <div className="hero_buttons">
-                                    {/* <Link className="hero_btn1" to="/roadmap" activeStyle={{ fontWeight: "bold",}}>
+                                    <Link className="hero_btn1" to="/roadmap" activeStyle={{ fontWeight: "bold",}}>
                 Roadmap
-                </Link> */}
+                </Link>
                                     <Link className="hero_btn2" to="/mint" activeStyle={{ fontWeight: "bold" }}>
-                Mint Live
+                Mint: 17 Feb, 2022
                 </Link>
                                 </div>
                             </div>

@@ -100,8 +100,8 @@ body {
     outline: 0;
     font-weight: 900;
     text-decoration: none;
-    padding: 8px 40px;
-    font-size: 20px;
+    padding: 8px 10px;
+    font-size: 14px;
     border: none;
     cursor: pointer;
     margin:auto;
@@ -354,6 +354,7 @@ a {
 
 .wallet-adapter-button {
     line-height: 25px;
+    width: 140px;
 }
 .select___navbar___main div {
     background-color: rgb(255, 255, 255) !important;

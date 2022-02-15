@@ -8,13 +8,11 @@
     margin-bottom: 50px;
 }
 
-.featuredlaunch_leftCol{
+.featuredlaunch_leftCol {
     width: 555px;
 }
 
-.featuredlaunch_rightCol{
-    width: 396px;
-}
+
 
 .featuredlaunch_rightCol,
 .featuredlaunch_leftCol {
@@ -38,53 +36,85 @@
     border-radius: 4px;
     letter-spacing: 0.15em;
     padding: 0.5rem;
-    width: 33%;
+    width: 40%;
+    text-align: center;
+}
+.featuredlaunch_tag1 {
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    background: hsla(0, 0%, 100%, 0.1);
+    border: 0.5px solid #594a68;
+    box-sizing: border-box;
+    backdrop-filter: blur(2.83458px);
+    border-radius: 4px;
+    letter-spacing: 0.15em;
+    padding: 0.5rem;
+    width: 40%;
+    padding-top: 15px;
     text-align: center;
 }
 
-
-.featuredLaunch_name{
+.featuredLaunch_name {
     font-size: 58px;
     line-height: 120%;
     /* padding-right: 250px; */
 }
 
-.featuredlaunch_clipboard{
+.featuredlaunch_clipboard {
     display: flex;
     gap: 10px;
-
 }
 
-
-.featuredlaunch_box{
+.featuredlaunch_box {
     background-color: #2b2037;
-    border-radius:8px;
+    border-radius: 8px;
     padding: 1rem;
     display: flex;
     flex-direction: column;
 }
 
-
-.featuredlaunch_box span{
+.featuredlaunch_box span {
     color: #b4abba;
     font-size: 22px;
 }
 
-.featuredlaunch_quantity{
+.featuredlaunch_quantity {
     color: white;
     font-size: 18px;
 }
 
-@media (max-width: 768px){
-    .featuredLaunch_name{
+@media (max-width: 768px) {
+    .featuredLaunch_name {
         font-size: 36px;
     }
-    .featuredlaunch_tag{
+    .featuredlaunch_tag {
         width: auto;
         font-size: 16px;
         padding: 10px 20px;
     }
-    .featured__launch__button{
+    .featured__launch__button {
         width: auto !important;
     }
+}
+
+.featured_launch_amount_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+}
+.featured_launch_amount_value {
+    width: 50%;
+    height: 40px;
+    background: none;
+    border: none;
+    padding: 1rem 0px;
+    text-align: center;
+    font-size: 2rem;
+    align-items: center;
+    outline: solid 2px;
+    border-radius: 8px;
+    font-weight: 700;
+    min-width: 10rem;
 }
