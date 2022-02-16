@@ -410,7 +410,7 @@ const Home = (props: HomeProps) => {
     const basePrice = 0.4;
 
     const currentDate = new Date(new Date().toUTCString()).getTime();
-    const launchDate = new Date(Date.UTC(2022, 1, 16, 15, 0, 0, 0)).getTime();
+    const launchDate = new Date(Date.UTC(2022, 1, 17, 15, 0, 0, 0)).getTime();
 
     const renderer: FC<Props> = ({ days, hours, minutes, seconds, completed }) => {
         return (
