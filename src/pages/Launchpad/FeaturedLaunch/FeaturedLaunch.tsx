@@ -159,6 +159,8 @@ const Home = (props: HomeProps) => {
     const [whitelistPrice, setWhitelistPrice] = useState(0);
     const [whitelistEnabled, setWhitelistEnabled] = useState(false);
     const [whitelistTokenBalance, setWhitelistTokenBalance] = useState(0);
+    const [isWhitelisted, SetWhitelisted] = useState(false);
+    const [api_url, setUrl] = useState(process.env.REACT_APP_API_URL)
 
     const [alertState, setAlertState] = useState<AlertState>({
         open: false,
@@ -277,7 +279,24 @@ const Home = (props: HomeProps) => {
     }
 
     const onMint = async () => {
+
+
+
+       
+          
+
+
         try {
+            let res = await fetch(`${api_url}/whitelisted/member/${(wallet as anchor.Wallet).publicKey.toString()}`, {method: "GET"})
+            const res_json = await res.json()
+            const res_num = await JSON.parse(JSON.stringify(res_json)).reserve //The number  of reserves the user has left
+            if(!isWhitelisted){
+              throw new Error("You are not whitelisted");
+            }
+            if(res_num - 1 < 0){
+              console.log("confirmed")
+              throw new Error("Not enough reserves");
+            }
             setIsMinting(true);
             document.getElementById("#identity")?.click();
             if (wallet && candyMachine?.program && wallet.publicKey) {
@@ -314,7 +333,7 @@ const Home = (props: HomeProps) => {
             }
         } catch (error: any) {
             // TODO: blech:
-            let message = error.msg || "Minting failed! Please try again!";
+            let message = error.msg || "You are not whitelisted. Join Discord to be eligible.";
             if (!error.msg) {
                 if (!error.message) {
                     message = "Transaction Timeout! Please try again.";
@@ -374,6 +393,13 @@ const Home = (props: HomeProps) => {
             if (wallet) {
                 const balance = await props.connection.getBalance(wallet.publicKey);
                 setBalance(balance / LAMPORTS_PER_SOL);
+                const data = await fetch(`${api_url}/whitelisted/member/${(wallet as anchor.Wallet).publicKey.toString()}`)
+                if(data.status.toString() !== "404"){
+                  SetWhitelisted(true)
+                }
+                else{
+                  console.log("not found")
+                }
             }
         })();
     }, [wallet, props.connection]);
@@ -384,7 +410,7 @@ const Home = (props: HomeProps) => {
     const basePrice = 0.4;
 
     const currentDate = new Date(new Date().toUTCString()).getTime();
-    const launchDate = new Date(Date.UTC(2022, 1, 17, 15, 0, 0, 0)).getTime();
+    const launchDate = new Date(Date.UTC(2022, 1, 16, 15, 0, 0, 0)).getTime();
 
     const renderer: FC<Props> = ({ days, hours, minutes, seconds, completed }) => {
         return (
