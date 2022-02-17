@@ -410,7 +410,7 @@ const Home = (props: HomeProps) => {
     const basePrice = 0.4;
 
     const currentDate = new Date(new Date().toUTCString()).getTime();
-    const launchDate = new Date(Date.UTC(2022, 1, 17, 15, 0, 0, 0)).getTime();
+    const launchDate = new Date(Date.UTC(2022, 1, 17, 14, 55, 0, 0)).getTime();
 
     const renderer: FC<Props> = ({ days, hours, minutes, seconds, completed }) => {
         return (
@@ -445,7 +445,7 @@ const Home = (props: HomeProps) => {
                     <div className="featuredlaunch_container">
                         <div className="featuredlaunch_leftCol">
                             <div style={{ display: "flex" }}>
-                                <div className="featuredlaunch_tag1">EARLY-BIRD-SALE:3PM UTC, 17 FEB</div>
+                                <div className="featuredlaunch_tag1">EARLY-BIRD-SALE: <br /> LIVE NOW</div>
                                 <div className="featuredlaunch_tag " style={{ marginLeft: "10px" }}>
                                     {" "}
                                     <Wallet>
