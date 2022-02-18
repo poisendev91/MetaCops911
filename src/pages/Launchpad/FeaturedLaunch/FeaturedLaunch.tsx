@@ -184,9 +184,9 @@ const Home = (props: HomeProps) => {
             );
 
             setCandyMachine(cndy);
-            setItemsAvailable(cndy.state.itemsAvailable - 2511);
-            setItemsRemaining(cndy.state.itemsRemaining-2511);
-            setItemsRedeemed(cndy.state.itemsRedeemed);
+            setItemsAvailable(cndy.state.itemsAvailable - 2501);
+            setItemsRemaining(cndy.state.itemsRemaining-2501);
+            setItemsRedeemed(cndy.state.itemsRedeemed+12);
 
             var divider = 1;
             if (decimals) {
