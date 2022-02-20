@@ -10,7 +10,7 @@ import instagram from '../../assets/instagram.png'
 
 const data = [
     {
-        head: "white-rabbit",
+        head: "big-bang",
         img: clothingCollection,
         para: "Web3 Master",
         instagramid:"https://www.instagram.com/shubham_kunwar__/"
