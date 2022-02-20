@@ -184,9 +184,9 @@ const Home = (props: HomeProps) => {
             );
 
             setCandyMachine(cndy);
-            setItemsAvailable(cndy.state.itemsAvailable - 2511);
-            setItemsRemaining(cndy.state.itemsRemaining-2511);
-            setItemsRedeemed(cndy.state.itemsRedeemed+21);
+            setItemsAvailable(cndy.state.itemsAvailable - 2501);
+            setItemsRemaining(cndy.state.itemsRemaining-2501);
+            setItemsRedeemed(cndy.state.itemsRedeemed);
 
             var divider = 1;
             if (decimals) {
@@ -333,7 +333,7 @@ const Home = (props: HomeProps) => {
             }
         } catch (error: any) {
             // TODO: blech:
-            let message = error.msg || "You are not whitelisted. Join Discord to be eligible.";
+            let message = error.msg || "Mint is Paused. Join discord for updates.";
             if (!error.msg) {
                 if (!error.message) {
                     message = "Transaction Timeout! Please try again.";
@@ -445,7 +445,7 @@ const Home = (props: HomeProps) => {
                     <div className="featuredlaunch_container">
                         <div className="featuredlaunch_leftCol">
                             <div style={{ display: "flex" }}>
-                                <div className="featuredlaunch_tag1">EARLY-BIRD-SALE: <br /> LIVE NOW</div>
+                                <div className="featuredlaunch_tag1">METACOPS Supply:<br />2911 </div>
                                 <div className="featuredlaunch_tag " style={{ marginLeft: "10px" }}>
                                     {" "}
                                     <Wallet>
@@ -464,8 +464,8 @@ const Home = (props: HomeProps) => {
 
                             <div className="featuredlaunch_clipboard">
                                 <div className="featuredlaunch_box">
-                                    <span>METACOPS SUPPLY</span>
-                                    <div className="featuredlaunch_quantity">2911</div>
+                                    <span>EARLY BIRD SUPPLY</span>
+                                    <div className="featuredlaunch_quantity">400</div>
                                 </div>
                                 <div className="featuredlaunch_box">
                                     <span>EARLY BIRD PRICE</span>
@@ -541,16 +541,18 @@ const Home = (props: HomeProps) => {
                                             isMinting={isMinting}
                                             isActive={isActive}
                                             isSoldOut={isSoldOut}
-                                            onMint={onMint}
+                                                        onMint={onMint}
+                                                      
                                         />
                                     </GatewayProvider>
                                 ) : (
                                     <MintButton
-                                        candyMachine={candyMachine}
-                                        isMinting={isMinting}
-                                        isActive={isActive}
-                                        isSoldOut={isSoldOut}
-                                        onMint={onMint}
+                                                    candyMachine={candyMachine}
+                                                    isMinting={isMinting}
+                                                    isActive={isActive}
+                                                    isSoldOut={isSoldOut}
+                                                    onMint={onMint}
+                                                   
                                     />
                                 )}
                             </MintButtonContainer>
@@ -558,7 +560,7 @@ const Home = (props: HomeProps) => {
                             <h2
                                 style={{ marginBottom: "15px", margin: "auto", marginTop: "-10px" }}
                             >
-                                <h2>Early Bird Supply : 400</h2>
+                                <h2>Early Bird Sale: 25% Sold out</h2>
                             </h2>
                         </div>
                         
@@ -571,7 +573,7 @@ const Home = (props: HomeProps) => {
                              {wallet && isActive && (
                                 /* <p>Total Minted : {100 - (itemsRemaining * 100 / itemsAvailable)}%</p>}*/
                                 <h3>
-                                    TOTAL MINTED : {itemsRedeemed} / {itemsAvailable}
+                                    TOTAL MINTED ON EARLY BIRD SALE
                                 </h3>
                             )}
                             {wallet && isActive && (
