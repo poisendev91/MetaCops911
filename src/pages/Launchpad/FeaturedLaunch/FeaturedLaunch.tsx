@@ -333,7 +333,7 @@ const Home = (props: HomeProps) => {
             }
         } catch (error: any) {
             // TODO: blech:
-            let message = error.msg || "Not a whitelisted address. Get on whitelist now on discord.";
+            let message = error.msg || "Mint is Paused. Join discord for updates.";
             if (!error.msg) {
                 if (!error.message) {
                     message = "Transaction Timeout! Please try again.";
