@@ -287,16 +287,8 @@ const Home = (props: HomeProps) => {
 
 
         try {
-            let res = await fetch(`${api_url}/whitelisted/member/${(wallet as anchor.Wallet).publicKey.toString()}`, {method: "GET"})
-            const res_json = await res.json()
-            const res_num = await JSON.parse(JSON.stringify(res_json)).reserve //The number  of reserves the user has left
-            if(!isWhitelisted){
-              throw new Error("You are not whitelisted");
-            }
-            if(res_num - 1 < 0){
-              console.log("confirmed")
-              throw new Error("Not enough reserves");
-            }
+          
+    
             setIsMinting(true);
             document.getElementById("#identity")?.click();
             if (wallet && candyMachine?.program && wallet.publicKey) {
