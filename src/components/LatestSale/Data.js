@@ -1,11 +1,11 @@
 export const DataFaqsBuyerSellers = [
     {
         quest: "When is the official launch? ",
-        ans: "👉 February 2022. The exact time will be anounced later. ",
+        ans: "👉 August 2022. The exact time will be anounced later. ",
     },
     {
         quest: "Will there be a whitelist and how to get on",
-        ans: "👉 Yes, you can get whitelisted by inviting 5 friends. The second method is to be  active in the community and level up to obtain your spot on the whitelist. Required Rank :5",
+        ans: "👉 Yes, you can get whitelisted by inviting 2 friends on instagram. The second method is to be active in the community.",
     },
     {
         quest: "What form of payment do they take?",
@@ -13,7 +13,7 @@ export const DataFaqsBuyerSellers = [
     },
     {
         quest: "How do I buy a Metacop NFT?",
-        ans: "👉 You will be able to purchase Metacop NFT through our public minting sale, or once the collection is live through our solsea.io collection.",
+        ans: "👉 You will be able to purchase Metacop NFT through our public minting sale which will be free to mint, or once the collection is live through our solsea.io collection.",
     },
     {
         quest: "How do I get a free Metacop NFT?",
@@ -23,7 +23,7 @@ export const DataFaqsBuyerSellers = [
 
 export const DataFaqsCreaters = [
     {
-        quest: "blvsdigfbisldbvWhat fees are included in the price of a listed NFT?",
+        quest: "What fees are included in the price of a listed NFT?",
         ans: "There are two additional fees paid for by the Buyer of the NFT. The royalty % fee is set by the creator at the time of minting and the service fee of 2.5% is collected by AltDeck.",
     },
     {
