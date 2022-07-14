@@ -18,7 +18,7 @@ const Contact = () => {
             <ul className={`nobullet ${style.social}`} >
               <li >
                 <a
-                  href="https://discord.gg/5nTgdq73P8"
+                  href="https://discord.gg/UurzmJW3bC"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
