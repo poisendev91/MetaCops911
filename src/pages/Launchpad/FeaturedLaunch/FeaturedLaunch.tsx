@@ -279,21 +279,14 @@ const Home = (props: HomeProps) => {
     }
 
     const onMint = async () => {
-
-
-
-       
-          
-
-
         try {
-          
-    
             setIsMinting(true);
-            document.getElementById("#identity")?.click();
+            document.getElementById('#identity')?.click();
             if (wallet && candyMachine?.program && wallet.publicKey) {
                 const mint = anchor.web3.Keypair.generate();
-                const mintTxId = (await mintOneToken(candyMachine, wallet.publicKey, mint))[0];
+                const mintTxId = (
+                    await mintOneToken(candyMachine, wallet.publicKey, mint)
+                )[0];
 
                 let status: any = { err: true };
                 if (mintTxId) {
@@ -301,7 +294,7 @@ const Home = (props: HomeProps) => {
                         mintTxId,
                         props.txTimeout,
                         props.connection,
-                        "singleGossip",
+                        'singleGossip',
                         true,
                     );
                 }
@@ -309,8 +302,8 @@ const Home = (props: HomeProps) => {
                 if (!status?.err) {
                     setAlertState({
                         open: true,
-                        message: "Congratulations! Mint succeeded!",
-                        severity: "success",
+                        message: 'Congratulations! Mint succeeded!',
+                        severity: 'success',
                     });
 
                     // update front-end amounts
@@ -318,21 +311,21 @@ const Home = (props: HomeProps) => {
                 } else {
                     setAlertState({
                         open: true,
-                        message: "Mint failed! Please try again!",
-                        severity: "error",
+                        message: 'Mint failed! Please try again!',
+                        severity: 'error',
                     });
                 }
             }
         } catch (error: any) {
             // TODO: blech:
-            let message = error.msg || "Mint is Paused. Join discord for updates.";
+            let message = error.msg || 'Minting failed! Please try again!';
             if (!error.msg) {
                 if (!error.message) {
-                    message = "Transaction Timeout! Please try again.";
-                } else if (error.message.indexOf("0x138")) {
-                } else if (error.message.indexOf("0x137")) {
+                    message = 'Transaction Timeout! Please try again.';
+                } else if (error.message.indexOf('0x138')) {
+                } else if (error.message.indexOf('0x137')) {
                     message = `SOLD OUT!`;
-                } else if (error.message.indexOf("0x135")) {
+                } else if (error.message.indexOf('0x135')) {
                     message = `Insufficient funds to mint. Please fund your wallet.`;
                 }
             } else {
@@ -385,13 +378,7 @@ const Home = (props: HomeProps) => {
             if (wallet) {
                 const balance = await props.connection.getBalance(wallet.publicKey);
                 setBalance(balance / LAMPORTS_PER_SOL);
-                const data = await fetch(`${api_url}/whitelisted/member/${(wallet as anchor.Wallet).publicKey.toString()}`)
-                if(data.status.toString() !== "404"){
-                  SetWhitelisted(true)
-                }
-                else{
-                  console.log("not found")
-                }
+              
             }
         })();
     }, [wallet, props.connection]);

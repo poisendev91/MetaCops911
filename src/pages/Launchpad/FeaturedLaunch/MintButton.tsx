@@ -24,20 +24,21 @@ export const CTAButton = styled(Button)`
   font-size: 1em !important;
 `;
 
+
 export const MintButton = ({
-                               onMint,
-                               candyMachine,
-                               isMinting,
-                               isActive,
-                               isSoldOut
-                           }: {
+    onMint,
+    candyMachine,
+    isMinting,
+    isActive,
+    isSoldOut
+}: {
     onMint: () => Promise<void>;
     candyMachine: CandyMachine | undefined;
     isMinting: boolean;
     isActive: boolean;
     isSoldOut: boolean;
 }) => {
-    const {requestGatewayToken, gatewayStatus} = useGateway();
+    const { requestGatewayToken, gatewayStatus } = useGateway();
     const [clicked, setClicked] = useState(false);
     const [isVerifying, setIsVerifying] = useState(false);
 
@@ -80,9 +81,9 @@ export const MintButton = ({
             ) : isActive ? (
                 isVerifying ? 'VERIFYING...' :
                     isMinting ? (
-                        <CircularProgress/>
+                        <CircularProgress />
                     ) : (
-                        "MINT LIVE"
+                        "MINT"
                     )
             ) : (candyMachine?.state.goLiveDate ? (
                 "SOON"
