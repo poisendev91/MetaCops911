@@ -39,7 +39,7 @@ const Hero = () => {
                 Roadmap
                 </Link> 
                                     <Link className="hero_btn2" to="/mint" activeStyle={{ fontWeight: "bold" }}>
-                Pre-sale Soon
+                Mint Free NFT
                 </Link>
                                 </div>
                             </div>
