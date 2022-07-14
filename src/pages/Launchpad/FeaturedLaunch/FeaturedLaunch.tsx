@@ -448,7 +448,7 @@ const Home = (props: HomeProps) => {
                                 </div>
                                 <div className="featuredlaunch_box">
                                     <span>EARLY BIRD PRICE</span>
-                                    <div className="featuredlaunch_quantity">0.4 Sol</div>
+                                    <div className="featuredlaunch_quantity">Free</div>
                                 </div>
                             </div>
                             <p style={{ paddingRight: "12px", justifyContent: "center" }}>
@@ -478,7 +478,7 @@ const Home = (props: HomeProps) => {
                                 className="text-2xl"
                                 style={{ marginBottom: "-35px", margin: "auto" }}
                             >
-                                ~ {quantity * basePrice} SOL
+                                ~ 0 SOL
                             </h2>
                             <MintButtonContainer>
                                 {!isActive && candyMachine?.state.goLiveDate ? (
