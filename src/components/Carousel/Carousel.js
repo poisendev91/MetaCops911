@@ -13,19 +13,19 @@ const data = [
         head: "big-bang",
         img: clothingCollection,
         para: "Web3 Master",
-        instagramid:"https://www.instagram.com/shubham_kunwar__/"
+        instagramid:"https://www.instagram.com/web3.sol/"
     },
     {
-        head: "Mugambow ",
+        head: "Solboy",
         img: vehicleCollection,
         para: "Marketing guru",
-        instagramid:"https://www.instagram.com/vishalshukla.22/"
+        instagramid:"https://www.instagram.com/metacops911/"
     },
     {
         head: "Page-7",
         img: firearmCollection,
         para: "Virtual Artist",
-        instagramid:"https://www.instagram.com/saint.n.sinner._/"
+        instagramid:"https://www.instagram.com/blender_king/"
     },
    
 ];
