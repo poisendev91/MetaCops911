@@ -447,7 +447,7 @@ const Home = (props: HomeProps) => {
                                     <div className="featuredlaunch_quantity">100</div>
                                 </div>
                                 <div className="featuredlaunch_box">
-                                    <span>\PRE_SALE PRICE</span>
+                                    <span>PRE_SALE PRICE</span>
                                     <div className="featuredlaunch_quantity">10 Serum($SRM)</div>
                                 </div>
                             </div>
@@ -539,7 +539,7 @@ const Home = (props: HomeProps) => {
                             <h2
                                 style={{ marginBottom: "15px", margin: "auto", marginTop: "-10px" }}
                             >
-                                <h2>Early Bird Sale: 25% Sold out</h2>
+                                <h2>Early Bird Sale(Free Mints):Sold out</h2>
                             </h2>
                         </div>
                         
@@ -552,13 +552,12 @@ const Home = (props: HomeProps) => {
                              {wallet && isActive && (
                                 /* <p>Total Minted : {100 - (itemsRemaining * 100 / itemsAvailable)}%</p>}*/
                                 <h3>
-                                    TOTAL MINTED ON EARLY BIRD SALE
+                                    TOTAL MINTED 
                                 </h3>
                             )}
-                            {wallet && isActive && (
-                                <BorderLinearProgress
-                                    variant="determinate"
-                                    value={100 - (itemsRemaining * 100) / itemsAvailable}
+                            {wallet && isActive && <BorderLinearProgress variant="determinate"
+                                                                         value={100 - (itemsRemaining * 100 / itemsAvailable)}/>}
+                            <br/>
                                 />
                             )}
                         </div>
