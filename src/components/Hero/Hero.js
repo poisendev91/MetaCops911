@@ -39,7 +39,7 @@ const Hero = () => {
                 Roadmap
                 </Link> 
                                     <Link className="hero_btn2" to="/mint" activeStyle={{ fontWeight: "bold" }}>
-                Mint Free NFT
+                Pre- Mint:Live
                 </Link>
                                 </div>
                             </div>
