@@ -558,8 +558,7 @@ const Home = (props: HomeProps) => {
                             {wallet && isActive && <BorderLinearProgress variant="determinate"
                                   value={125 - (itemsRemaining * 100 / itemsAvailable)}/>}
                             <br/>
-                                />
-                            }
+                               
                         </div>
                     </div>
                 </Paper>
