@@ -5,7 +5,7 @@ import Button from "../../Button/Button";
 import { Link } from "react-router-dom";
 import Switch from "@mui/material/Switch";
 import { NavDropdown } from "react-bootstrap";
-import discord from '../../../assets/discord.png'
+import telegram from '../../../assets/telegram.png'
 
 const label = { inputProps: { "aria-label": "Switch demo" } };
 
@@ -40,12 +40,12 @@ const Web = ({ expanded }) => {
            <li>
             <div >
                         <a
-                  href="https://discord.gg/UurzmJW3bC"
+                  href="https://telegram.me/+y2zJiN1vrtRmMTg1"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <img
-                    src={discord}
+                    src={telegram}
                     alt="placeholder"
                     style={{width:"42px", borderRadius: "15px", marginBottom:"-5px"}}
                   />
