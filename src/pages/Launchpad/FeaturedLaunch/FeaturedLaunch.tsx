@@ -444,7 +444,7 @@ const Home = (props: HomeProps) => {
                             <div className="featuredlaunch_clipboard">
                                 <div className="featuredlaunch_box">
                                     <span>PRE-SALE SUPPLY</span>
-                                    <div className="featuredlaunch_quantity">100</div>
+                                    <div className="featuredlaunch_quantity">420</div>
                                 </div>
                                 <div className="featuredlaunch_box">
                                     <span>PRE_SALE PRICE</span>
