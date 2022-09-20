@@ -63,16 +63,16 @@ const Footer = () => (
             <ul className={style.social}>
               <li>
                 <a
-                  href="https://discord.gg/UurzmJW3bC"
+                  href="https://telegram.me/+y2zJiN1vrtRmMTg1"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className="fab fa-discord fa-2x" />
+                  <i className="fab fa-telegram fa-2x" />
                 </a>
               </li>
               <li>
                 <a
-                  href="https://twitter.com/cops_nft"
+                  href="https://twitter.com/metacopsnft"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
