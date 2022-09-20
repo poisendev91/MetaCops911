@@ -3,7 +3,7 @@ import Button from "@mui/material/Button";
 import Container from "@mui/material/Container";
 import "./Contact.css";
 import style from '../../components/Footer/footer.module.css';
-import discord from '../../assets/discord.png'
+import telegram from '../../assets/telegram.png'
 import twitter from '../../assets/twitter.png'
 import instagram from '../../assets/instagram.png'
 
@@ -18,12 +18,12 @@ const Contact = () => {
             <ul className={`nobullet ${style.social}`} >
               <li >
                 <a
-                  href="https://discord.gg/UurzmJW3bC"
+                  href="https://telegram.me/+y2zJiN1vrtRmMTg1"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <img
-                    src={discord}
+                    src={telegram}
                     alt="placeholder"
                     style={{width:"100px", borderRadius: "12px" }}
                   />
@@ -31,7 +31,7 @@ const Contact = () => {
               </li>
               <li>
                 <a
-                  href="https://twitter.com/cops_nft"
+                  href="https://twitter.com/metacopsnft"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
