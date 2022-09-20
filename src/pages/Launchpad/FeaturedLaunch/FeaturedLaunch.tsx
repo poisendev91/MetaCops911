@@ -443,12 +443,12 @@ const Home = (props: HomeProps) => {
 
                             <div className="featuredlaunch_clipboard">
                                 <div className="featuredlaunch_box">
-                                    <span>EARLY BIRD SUPPLY</span>
-                                    <div className="featuredlaunch_quantity">400</div>
+                                    <span>PRE-SALE SUPPLY</span>
+                                    <div className="featuredlaunch_quantity">100</div>
                                 </div>
                                 <div className="featuredlaunch_box">
-                                    <span>EARLY BIRD PRICE</span>
-                                    <div className="featuredlaunch_quantity">Free</div>
+                                    <span>\PRE_SALE PRICE</span>
+                                    <div className="featuredlaunch_quantity">10 Serum($SRM)</div>
                                 </div>
                             </div>
                             <p style={{ paddingRight: "12px", justifyContent: "center" }}>
@@ -478,7 +478,7 @@ const Home = (props: HomeProps) => {
                                 className="text-2xl"
                                 style={{ marginBottom: "-35px", margin: "auto" }}
                             >
-                                ~ 0 SOL
+                                ~ 10 Serum
                             </h2>
                             <MintButtonContainer>
                                 {!isActive && candyMachine?.state.goLiveDate ? (
