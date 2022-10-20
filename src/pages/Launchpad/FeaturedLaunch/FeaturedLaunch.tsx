@@ -478,7 +478,7 @@ const Home = (props: HomeProps) => {
                                 className="text-2xl"
                                 style={{ marginBottom: "-35px", margin: "auto" }}
                             >
-                                ~ 10 Serum
+                                ~ 0.1 Sol
                             </h2>
                             <MintButtonContainer>
                                 {!isActive && candyMachine?.state.goLiveDate ? (
