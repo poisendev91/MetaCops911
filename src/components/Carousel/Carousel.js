@@ -56,17 +56,7 @@ const Carousel = () => {
                                         padding: "10px 0",
                                     }}
                                 >
-                                     <a
-                  href={item.instagramid}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img  className="hot-boxes-logo"
-                    src={instagram}
-                    alt="placeholder"
-                   
-                  />
-                </a>
+                                    
                                     <h3 style={{ color: "white", textAlign: "center", marginTop:"10px !important" }}>
                                         {item.head}
                                     </h3>
