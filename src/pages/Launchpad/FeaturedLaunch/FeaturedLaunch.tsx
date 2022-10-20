@@ -448,7 +448,7 @@ const Home = (props: HomeProps) => {
                                 </div>
                                 <div className="featuredlaunch_box">
                                     <span>PRE_SALE PRICE</span>
-                                    <div className="featuredlaunch_quantity">10 Serum($SRM)</div>
+                                    <div className="featuredlaunch_quantity">0.1 Sol</div>
                                 </div>
                             </div>
                             <p style={{ paddingRight: "12px", justifyContent: "center" }}>
