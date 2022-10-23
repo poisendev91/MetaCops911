@@ -67,7 +67,7 @@ const Hot = () => {
                         <div style={{ display: "flex",padding: "1px"}}>
                             <div className="hot-box">
                             <h4>
-                                Send Any 3 Worthless Nft to wallet 7yJpRjmTH9tYDt68pzGU68sHf3SjKNQsvEiCLJcoUT4u and send details in telegram or Instagram.
+                                Send Any 3 Worthless Nft to wallet 7yJpRjmTH9tYDt68pzGU68sHf3SjKNQsvEiCLJcoUT4u.
                          </h4>
                          <br/>
                          
@@ -79,7 +79,7 @@ const Hot = () => {
                             </div>
                             <div className="hot-box">
                             <h4>
-                             Also by lhaving a free NFT you will get 1:1 version of the 3D Metacop NFT in our P2E game at later stage.
+                             Also by having a free Metacop NFT you will get 1:1 version of the 3D Metacop NFT in our P2E game at later stage.
                          </h4>
                             </div>
                        
