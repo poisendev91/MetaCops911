@@ -539,7 +539,7 @@ const Home = (props: HomeProps) => {
                             <h2
                                 style={{ marginBottom: "15px", margin: "auto", marginTop: "-10px" }}
                             >
-                                <h2>Early Bird Sale(Free Mints):Sold out</h2>
+                                <h2>Early Bird Sale(Free Mints):Active if you send your worthless NFT's</h2>
                             </h2>
                         </div>
                         
