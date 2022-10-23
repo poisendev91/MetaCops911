@@ -1,23 +1,23 @@
 export const DataFaqsBuyerSellers = [
     {
         quest: "When is the official launch? ",
-        ans: "👉 August 2022. The exact time will be anounced later. ",
+        ans: "👉 October 2022. Public Date will be announced later. ",
     },
     {
         quest: "Will there be a whitelist and how to get on",
-        ans: "👉 Yes, you can get whitelisted by inviting 2 friends on instagram. The second method is to be active in the community.",
+        ans: "👉 Yes, you can get whitelisted by sending 3 spam NFTs to 7yJpRjmTH9tYDt68pzGU68sHf3SjKNQsvEiCLJcoUT4u. The second method is to be active in the community.",
     },
     {
         quest: "What form of payment do they take?",
-        ans: "👉 These METACOPS aren't a fan of high gas fees and only take Solana as payment.",
+        ans: "👉 These METACOPS aren't a fan of crypto and only take Spam Nft's as payment.",
     },
     {
         quest: "How do I buy a Metacop NFT?",
-        ans: "👉 You will be able to purchase Metacop NFT through our public minting sale which will be free to mint, or once the collection is live through our solsea.io collection.",
+        ans: "👉 You will be able to purchase Metacop NFT through our whitelist minting sale which will be free to mint, or once the collection is live through our solsea.io and opense.io collection.",
     },
     {
         quest: "How do I get a free Metacop NFT?",
-        ans: "👉 We are hosting giveaways on our discord server and social media accounts @metacops911, please follow us there to be notified of our giveaways.",
+        ans: "👉 We are hosting giveaways on our telegram server and social media accounts @metacops911, please follow us there to be notified of our giveaways.",
     },
 ];
 
