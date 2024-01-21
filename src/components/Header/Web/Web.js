@@ -37,40 +37,24 @@ const Web = ({ expanded }) => {
             style={{ display: "flex", alignItems: "center" }}
         >
            
-           <li>
-            <div >
-                        <a
-                  href="https://telegram.me/+y2zJiN1vrtRmMTg1"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src={telegram}
-                    alt="placeholder"
-                    style={{width:"42px", borderRadius: "15px", marginBottom:"-5px"}}
-                  />
-                </a>
-                        </div>
-            </li>
+        
             <li>
-                <Link className="navbar__link" to="/mint" activeStyle={{ fontWeight: "bold" }}>
-                  Mint
+                <Link className="navbar__link" to="/staking" style={{ fontWeight: "bold", color:"green" }}>
+                  Staking
                 </Link>
             </li>
-            <li>
-                <Link className="navbar__link" to="/roadmap" activeStyle={{ fontWeight: "bold" }}>
-                  Roadmap
-                </Link>
-            </li>
-            <li>
-                <Link className="navbar__link" to="/contact" activeStyle={{ fontWeight: "bold" }}>
-                  Socials
-                </Link>
-            </li>
+        
            
             <li>
                 <Link className="navbar__link" to="/whitepaper" activeStyle={{ fontWeight: "bold" }}>
                  Whitepaper
+                </Link>
+            </li>
+
+            
+            <li>
+                <Link className="navbar__link" to="/exchange" style={{ fontWeight: "bold", color:"green" }}>
+                  Exchange
                 </Link>
             </li>
            

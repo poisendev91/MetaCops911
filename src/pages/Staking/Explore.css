@@ -1,0 +1,27 @@
+.explore___menu___item{
+    align-items: center;
+}
+.explore___drawer___open{
+    height: auto !important;
+}
+@media (max-width: 768px){
+    .explore__hot__box{
+        width: 30vw !important;
+        height: 50vw !important;
+    }
+}
+
+@media (max-width: 590px){
+    .explore__hot__box{
+        width: 30vw !important;
+        height: 62vw !important;
+
+    }
+}
+@media (max-width: 450px){
+    .explore__hot__box{
+        width: 30vw !important;
+        height: 85vw !important;
+
+    }
+}

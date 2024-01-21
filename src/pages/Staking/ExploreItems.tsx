@@ -1,6 +1,6 @@
 import React from "react";
 import Collection from "../../assets/collection.png";
-import {Container} from "@mui/material";
+import Container from "@mui/material/Container";
 import { Link } from "react-router-dom";
 
 const datas = [

@@ -2,7 +2,7 @@ import React from "react";
 import { Grid, Divider, Tab, Tabs, Box, Typography } from "@mui/material";
 import LowerDiv from "./LowerDiv";
 
-import astro from "../../assets/astro.png";
+import astro from "../../assets/swat.png";
 import "./CollectionUI.css";
 
 const Item = (props) => {
@@ -14,39 +14,39 @@ const Explore = () => {
         <div className="explore-main-div">
             <div className="explore-upper-div">
                 <img src={astro} className="explore-avatar-div"></img>
-                <h1>Boryoku Dragonz</h1>
+                <h1>METACOPS NFT COLLECTION</h1>
                 <Grid container spacing={1} rowSpacing={1} columns={{ xs: 4, sm: 8, md: 12 }}>
-                    <Grid item xs={6} xs={2} sm={4} md={3}>
+                    <Grid item xs={6} sx={2} sm={4} md={3}>
                         <Item>
-                            <div>FLOOR PRICE</div>
-                            <div>$1,000</div>
+                            <div>TOTAL ITEMS</div>
+                            <div>911</div>
                         </Item>
                     </Grid>
-                    <Grid item xs={6} xs={2} sm={4} md={3}>
+                    <Grid item xs={6} sx={2} sm={4} md={3}>
                         <Item>
                             <div>FLOOR PRICE</div>
-                            <div>$1,000</div>
+                            <div>Launching Soon</div>
                         </Item>
                     </Grid>
-                    <Grid item xs={6} xs={2} sm={4} md={3}>
+                    <Grid item xs={6} sx={2} sm={4} md={3}>
                         <Item>
-                            <div>FLOOR PRICE</div>
-                            <div>$1,000</div>
+                            <div>Total Owners</div>
+                            <div>0</div>
                         </Item>
                     </Grid>
-                    <Grid item xs={6} xs={2} sm={4} md={3}>
+                    <Grid item xs={6} sx={2} sm={4} md={3}>
                         <Item>
-                            <div>FLOOR PRICE</div>
-                            <div>$1,000</div>
+                            <div>$MCOP SUPPLY</div>
+                            <div>10,00,00,000</div>
                         </Item>
                     </Grid>
                 </Grid>
                 <p className="explore-upper-p">
-                    Boryoku Dragonz Are An Exclusive Collection Of 1,111 Dragon NFTs On Solana,
-                    Backed By A Top Team Of NFT Collectors, Designers, Community Builders, And
-                    Artists. The Project Brings A Fresh Design To Solana, With Daily Token Airdrops,
-                    A Breeding Game With Token Burning Mechanics, And A Multi-Chain Community That
-                    Completely Transcends A Simple PFP Offering.
+                In the digital realm, there existed extraordinary beings known as Metacops! 🚀<br/>
+
+These friendly superheroes, armed with smart computer brains, embarked on a mission to make the online world safer and more enjoyable for everyone. 🌐<br/>
+
+Picture them as digital superheroes patrolling the internet streets, ready to assist anyone feeling lost or confused in the vast digital landscape. 🦸‍♂️
                 </p>
             </div>{" "}
             {/* explore-upper-div */}
